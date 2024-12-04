@@ -1,0 +1,265 @@
+/* General Styles */
+/* html, body {
+    font-family: 'Montserrat', sans-serif;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+} */
+
+/* Main container */
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 85vw; */
+    height: 80vh;
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid red;
+}
+
+/* Left Section */
+.left-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/public/Untitled\ design.png');
+    background-size: cover; /* Ensures image stays as-is */
+    background-repeat: no-repeat;
+    background-position: center; /* Keeps image centered */
+    margin-right: 20px;
+    border-radius: 10px;
+    height: 100%;
+    padding: 0;
+}
+
+/* Content inside Left Section */
+.left-panel-content {
+    text-align:bottom;
+    color: #fff;
+    padding: 20px;
+}
+
+/* Logo in Left Section */
+.left-panel-logo {
+    width: 350px;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+/* Welcome Title */
+.welcome-title {
+    margin-bottom: 20px;
+    font-size: 35px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Welcome Text */
+.welcome-text {
+    color: #fff;
+    max-width: 400px;
+    margin: 0 auto;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Right Section */
+.right-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 87%;
+    padding: 70px;
+    background-image: url('/public/loginbg.png');
+    background-size: cover; 
+        background-position: center;
+    background-repeat: no-repeat;
+}
+
+.content-container {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Logo */
+.logo {
+    width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Portal Title */
+.portal-title {
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Login Form */
+.login-form {
+    width: 45%;
+    min-width: 350px;
+    text-align: center;
+    padding: 40px;
+    height: auto;
+    max-height: 700px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    border: 1px solid #495057;
+}
+
+/* Input fields */
+.input-field {
+    width: 100%;
+    padding: 12px 18px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Adding margin to the Password field */
+.login-form .MuiTextField-root:last-of-type {
+    margin-bottom: 20px;
+}
+
+/* Login Button */
+.login-button {
+    margin-top: 30px;
+    background-color: #85c0ff;
+    color: #fff;
+    padding: 14px 24px;
+    font-size: 18px;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.login-button:hover {
+    background-color: #60adff;
+}
+
+/* Mobile Responsiveness */
+
+/* For Small Screens like Mobile */
+@media only screen and (max-width: 600px) {
+    .main-container {
+        flex-direction: column;
+        width: 100vw;
+        height: auto;
+    }
+
+    .left-section {
+        padding: 0;
+        margin-right: 0;
+        height: 50vh; /* Adjust height for mobile */
+        background-size: contain; /* Ensures image is contained within the section */
+        background-position: center;
+    }
+
+    .left-panel-logo {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .welcome-title {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    .welcome-text {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .right-section {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+    }
+
+    .login-form {
+        width: 90%;
+        padding: 30px;
+    }
+
+    .logo {
+        width: 150px;
+        margin-bottom: 10px;
+    }
+
+    .portal-title {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .input-field {
+        font-size: 14px;
+    }
+
+    .login-button {
+        font-size: 16px;
+        padding: 12px 20px;
+    }
+}
+
+/* For Medium Screens like Tablets */
+@media only screen and (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+    }
+
+    .left-section {
+        height: 40vh;
+        padding: 30px;
+        background-size: contain;
+    }
+
+    .left-panel-logo {
+        width: 100%;
+        height: auto;
+        margin-bottom: 30px;
+    }
+
+    .welcome-title {
+        font-size: 35px;
+    }
+
+    .welcome-text {
+        font-size: 18px;
+    }
+
+    .right-section {
+        width: 100%;
+        height: auto;
+        padding: 25px;
+    }
+
+    .login-form {
+        width: 80%;
+        padding: 35px;
+    }
+
+    .logo {
+        width: 180px;
+    }
+
+    .portal-title {
+        font-size: 30px;
+    }
+
+    .login-button {
+        font-size: 17px;
+        padding: 12px 22px;
+    }
+}

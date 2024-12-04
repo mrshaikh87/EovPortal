@@ -1,0 +1,172 @@
+/* Global Styles */
+/* body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f9;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+  } */
+  
+  /* Header Styling */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 15px;  /* Adjusted padding for smaller header */
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .header img {
+    height: 40px;  /* Adjusted logo size */
+  }
+  
+  /* Profile and Important Link Cards Section */
+  .profile-section {
+    display: flex;
+    justify-content: flex-start;  /* Aligning cards to the left */
+    align-items: flex-start;      /* Aligning items to the top */
+    margin: 20px 15px;  /* Adjust margin for smaller cards */
+    gap: 15px;          /* Reduced space between cards */
+  }
+  
+  /* Light Blue Background Behind the Cards */
+  .profile-card, .important-link-card {
+    width: 250px; /* Reduced width for smaller cards */
+    height: 200px; /* Reduced height */
+    padding: 15px;  /* Reduced padding */
+    background-color: #e7f3ff; /* Lighter blue background shade */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Profile Avatar */
+  .profile-avatar {
+    width: 70px;     /* Reduced size */
+    height: 70px;    /* Reduced size */
+    border-radius: 50%;
+    background-color: #34b5ff;
+    color: white;
+    font-size: 35px;  /* Reduced font size */
+    position: relative;
+    margin-bottom: 10px;
+  }
+  
+  /* Green Tick on Avatar */
+  .profile-avatar::after {
+    content: '\2714'; /* Unicode check mark */
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    background-color: #34b5ff;
+    color: white;
+    border-radius: 50%;
+    width: 20px;  /* Reduced size */
+    height: 20px; /* Reduced size */
+    font-size: 14px;  /* Reduced font size */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Important Link Section */
+  .paper-importance {
+    padding: 15px;  /* Reduced padding */
+    background-color: #e7f3ff; /* Lighter blue background shade */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Full width inside the card */
+    text-align: center;
+  }
+  
+  .paper-importance a {
+    color: #34b5ff;
+    text-decoration: none;
+  }
+  
+  .paper-importance a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Section Styles (Project, Personal Details, Certifications) */
+  .paper-section {
+    padding: 15px;  /* Reduced padding */
+    background-color: #fff;
+    margin-top: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project-form, .personal-form, .certifications-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;  /* Reduced gap between form elements */
+    justify-content: center;
+  }
+  
+  .MuiTextField-root {
+    background-color: #f9f9f9;
+    border-radius: 5px;
+  }
+  
+  /* Buttons */
+  button.MuiButton-root {
+    background-color: #34b5ff;
+    color: white;
+    font-weight: 600;
+    padding: 8px 12px;  /* Reduced padding */
+    margin-top: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button.MuiButton-root:hover {
+    background-color: #34b5ff;
+  }
+  
+  /* Collapse Icons */
+  .expand-open {
+    transform: rotate(180deg);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .expand-close {
+    transform: rotate(0deg);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  /* General Card Styles */
+  .MuiPaper-root {
+    border-radius: 8px; /* Reduced radius for more compact appearance */
+  }
+  
+  /* Address Toggle Styles */
+  .toggle-section {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;  /* Reduced gap */
+  }
+  
+  .toggle-section button {
+    background-color: #34b5ff;
+    color: white;
+    padding: 8px 12px;  /* Consistent with button styling */
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .toggle-section button:hover {
+    background-color: #34b5ff;
+  }
+  
